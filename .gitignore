@@ -1,0 +1,7 @@
+__pycache__/
+Video_data/checkpoint/
+Video_data/dataset/
+Video_data/demo/output/
+Video_data/demo/lib/checkpoint/
+Video_data/demo/video/
+Video_data/result/
