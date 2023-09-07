@@ -6,6 +6,8 @@ Ryota Tanaka, Tomohiro Suzuki, Kazuya Takeda, Keisuke Fujii, Automatic Edge Erro
 
 This is the official code for "Automatic Edge Error Judgment in Figure Skating Using 3D Pose Estimation from a Monocular Camera and IMUs".
 
+![overview_1](https://github.com/ryota-takedalab/JudgeAI-LutzEdge/assets/102862947/7c062b99-4ada-460b-82de-4d0e7a07c979)
+
 # Datasets
 
 You can download the IMU dataset as CSV files from `IMU_data/dataset` and video data from [Google Drive](https://drive.google.com/drive/folders/1WzERNs04uo_5xjybfKcXYOC9v8KL6Hk2?usp=drive_link).
