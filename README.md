@@ -17,7 +17,8 @@ Video data are pre-processed so that only the skaters are cut out from the bound
 You can validate our paper's data using the following code.
 
 ## STEP1
-Upload the video you want to judge for edge error `Video_data/demo/dataset`.
+Upload the video you want to judge for edge error `Video_data/demo/video`. 
+For video file extensions, .mp4 and .mov are recommended.
 
 ## STEP2
 Go to the `Video_data/demo` directory and run the following code.
