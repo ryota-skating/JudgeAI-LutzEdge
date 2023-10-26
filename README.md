@@ -15,6 +15,7 @@ Video data are pre-processed so that only the skaters are cut out from the bound
 
 # Usage
 You can validate our paper's data using the following code.
+Note: The GIF image in the example command execution below is played back at 20x speed.
 
 <img src="https://github.com/ryota-takedalab/JudgeAI-LutzEdge/assets/102862947/b088c223-fbd9-45b7-83ca-f15b496a73c2" width="600">
 
