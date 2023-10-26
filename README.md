@@ -15,26 +15,22 @@ Video data are pre-processed so that only the skaters are cut out from the bound
 
 # Usage
 You can validate our paper's data using the following code.
+![ターミナル](https://github.com/ryota-takedalab/JudgeAI-LutzEdge/assets/102862947/b088c223-fbd9-45b7-83ca-f15b496a73c2)
+
 
 ## STEP1
-Upload the video you want to judge for edge error `Video_data/demo/video`. 
+Upload the video you want to judge for edge error `Video_data/demo/video`. However, the video is supposed to be at 240 fps with a fixed viewpoint.
 For video file extensions, .mp4 and .mov are recommended.
 
 ## STEP2
-Go to the `Video_data/demo` directory and run the following code.
-`python main.py training.csv`
+Run the following code to the `Video_data/` directory.
 
-By default, The model is trained using preprocessed data of 17 joint position coordinates of the whole body and the left skate pose angle, each at 60 fps.
+`python demo/main.py --video sample_video.mov`
 
-The joint position coordinates and the left skate pose angle can each be downsampled to 12 fps using the option `--pos_fps 12` and `--rot fps 12`.
-
-If you want to use only the joint position coordinates or the left skate pose angle, options `--no_pos` and `--no_rot` can reduce the unnecessary features.
-
-In the random validation, you can change the number of trials using the option `-t (int)` or `--trials (int)`.
-
-If you want to use keypoints only on the lower half of the body, not the whole body, you can use the option `--lower`.
-
-You can save the validation result as a graph using the option `--plot`
+First, it detects who jumps in the video on a bbox basis.
+Next, 2D pose estimation of the target person is performed based on the detected bbox.
+Finally, 3D pose estimation is performed based on the estimated 2D pose estimation results to determine edge errors.
+The result is displayed as either "EDGE ERROR" or "NOT EDGE ERROR," with the accuracy displayed simultaneously.
 
 # Author
 
