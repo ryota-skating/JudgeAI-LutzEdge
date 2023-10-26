@@ -15,8 +15,8 @@ Video data are pre-processed so that only the skaters are cut out from the bound
 
 # Usage
 You can validate our paper's data using the following code.
-![ターミナル](https://github.com/ryota-takedalab/JudgeAI-LutzEdge/assets/102862947/b088c223-fbd9-45b7-83ca-f15b496a73c2)
 
+<img src="https://github.com/ryota-takedalab/JudgeAI-LutzEdge/assets/102862947/b088c223-fbd9-45b7-83ca-f15b496a73c2" width="600">
 
 ## STEP1
 Upload the video you want to judge for edge error `Video_data/demo/video`. However, the video is supposed to be at 240 fps with a fixed viewpoint.
@@ -29,8 +29,8 @@ Run the following code to the `Video_data/` directory.
 
 First, it detects who jumps in the video on a bbox basis.
 Next, 2D pose estimation of the target person is performed based on the detected bbox.
-Finally, 3D pose estimation is performed based on the estimated 2D pose estimation results to determine edge errors.
-The result is displayed as either "EDGE ERROR" or "NOT EDGE ERROR," with the accuracy displayed simultaneously.
+Finally, 3D pose estimation is performed based on the estimated 2D pose to judge edge errors.
+The result is displayed as either "EDGE ERROR" or "NOT EDGE ERROR," with the prediction accuracy displayed simultaneously.
 
 # Author
 
